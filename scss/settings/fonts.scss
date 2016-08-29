@@ -1,0 +1,41 @@
+/*-------------------------------------------------*/
+/*	fonts
+/*-------------------------------------------------*/
+
+@font-face {
+    font-family: 'PeaceSans';
+    src: url('../fonts/Peace-Sans/peace_sans_webfont-webfont.eot');
+    src: url('../fonts/Peace-Sans/peace_sans_webfont-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/Peace-Sans/peace_sans_webfont-webfont.woff2') format('woff2'),
+         url('../fonts/Peace-Sans/peace_sans_webfont-webfont.woff') format('woff'),
+         url('../fonts/Peace-Sans/peace_sans_webfont-webfont.ttf') format('truetype'),
+         url('../fonts/Peace-Sans/peace_sans_webfont-webfont.svg#peace_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+b{
+	font-weight: 700;
+}
+
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/Circe/Circe.eot');
+	src: local('☺'), url('../fonts/Circe/Circe.woff') format('woff'), url('../fonts/Circe/Circe.ttf') format('truetype'), url('../fonts/Circe/Circe.svg') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/Circe/Circe-Bold.eot');
+	src: local('☺'), url('../fonts/Circe/Circe-Bold.woff') format('woff'), url('../fonts/Circe/Circe-Bold.ttf') format('truetype'), url('../fonts/Circe/Circe-Bold.svg') format('svg');
+	font-weight: 700;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'Circe';
+	src: url('../fonts/Circe/Circe-ExtraBold.eot');
+	src: local('☺'), url('../fonts/Circe/Circe-ExtraBold.woff') format('woff'), url('../fonts/Circe/Circe-ExtraBold.ttf') format('truetype'), url('../fonts/Circe/Circe-ExtraBold.svg') format('svg');
+	font-weight: 900;
+	font-style: normal;
+}

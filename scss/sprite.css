@@ -1,0 +1,126 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+Example usage in HTML:
+
+`display: block` sprite:
+<div class="icon-home"></div>
+
+To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+
+// CSS
+.icon {
+  display: inline-block;
+}
+
+// HTML
+<i class="icon icon-home"></i>
+*/
+.icon-arrow-bottom {
+  background-image: url(../img/icon-set.png);
+  background-position: -360px -73px;
+  width: 35px;
+  height: 60px;
+}
+.icon-arrow-left {
+  background-image: url(../img/icon-set.png);
+  background-position: -72px -200px;
+  width: 141px;
+  height: 36px;
+}
+.icon-arrow-right {
+  background-image: url(../img/icon-set.png);
+  background-position: -72px -236px;
+  width: 140px;
+  height: 35px;
+}
+.icon-features-1 {
+  background-image: url(../img/icon-set.png);
+  background-position: -201px 0px;
+  width: 88px;
+  height: 100px;
+}
+.icon-features-2 {
+  background-image: url(../img/icon-set.png);
+  background-position: -101px 0px;
+  width: 100px;
+  height: 100px;
+}
+.icon-features-3 {
+  background-image: url(../img/icon-set.png);
+  background-position: -99px -101px;
+  width: 99px;
+  height: 99px;
+}
+.icon-features-4 {
+  background-image: url(../img/icon-set.png);
+  background-position: 0px -101px;
+  width: 99px;
+  height: 99px;
+}
+.icon-features-5 {
+  background-image: url(../img/icon-set.png);
+  background-position: 0px 0px;
+  width: 101px;
+  height: 101px;
+}
+.icon-features-6 {
+  background-image: url(../img/icon-set.png);
+  background-position: -201px -100px;
+  width: 80px;
+  height: 99px;
+}
+.icon-hww-1 {
+  background-image: url(../img/icon-set.png);
+  background-position: -289px -71px;
+  width: 71px;
+  height: 70px;
+}
+.icon-hww-2 {
+  background-image: url(../img/icon-set.png);
+  background-position: -134px -272px;
+  width: 66px;
+  height: 66px;
+}
+.icon-hww-3 {
+  background-image: url(../img/icon-set.png);
+  background-position: -289px 0px;
+  width: 71px;
+  height: 71px;
+}
+.icon-hww-4 {
+  background-image: url(../img/icon-set.png);
+  background-position: -360px 0px;
+  width: 63px;
+  height: 73px;
+}
+.icon-hww-5 {
+  background-image: url(../img/icon-set.png);
+  background-position: -68px -272px;
+  width: 66px;
+  height: 66px;
+}
+.icon-hww-6 {
+  background-image: url(../img/icon-set.png);
+  background-position: 0px -200px;
+  width: 72px;
+  height: 72px;
+}
+.icon-services-klop {
+  background-image: url(../img/icon-set.png);
+  background-position: 0px -272px;
+  width: 68px;
+  height: 70px;
+}
+.icon-services-mouse {
+  background-image: url(../img/icon-set.png);
+  background-position: -200px -272px;
+  width: 87px;
+  height: 33px;
+}
+.icon-services-tarakan {
+  background-image: url(../img/icon-set.png);
+  background-position: -289px -141px;
+  width: 62px;
+  height: 79px;
+}

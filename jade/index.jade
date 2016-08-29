@@ -1,0 +1,234 @@
+extends template
+
+block main
+	// -------------- services ------------------
+	.page__services#services
+		.container
+			h2 Наши <span class="color-orange">услуги</span>
+			.services.clearfix
+				.services__menu
+					.services__navigation
+						.services__navigation-item#serviceKlop.active
+							span.services__name.big-span борьба с клопами
+							span.services__icon: i.icon.icon-services-klop
+						.services__navigation-item#serviceMouse
+							span.services__name.big-span борьба с мышами
+							span.services__icon: i.icon.icon-services-mouse
+						.services__navigation-item#serviceTarakan
+							span.services__name.big-span борьба с тараканами
+							span.services__icon: i.icon.icon-services-tarakan
+					.services__image
+						img(src="img/service-clop.png", alt="").js-serviceKlop.active.js-serviceItem
+						img(src="img/service-muw.png", alt="").js-serviceMouse.js-serviceItem
+						img(src="img/service-tarakan.jpg", alt="").js-serviceTarakan.js-serviceItem
+					.services__desc
+						.js-serviceKlop.active.js-serviceItem
+							strong УНИЧТОЖЕНИЕ КЛОПОВ
+							p Уничтожение клопов может стать огромной проблемой для тех, кто не сумел вовремя идентифицировать наличие в жилище паразитов  и допустил их размножение и обширное распространение по квартире. В таких случаях, необходимо знать, как избавиться от клопов эффективнее всего. 
+						.js-serviceMouse.js-serviceItem
+							strong УНИЧТОЖЕНИЕ мышей
+							p Уничтожение клопов может стать огромной проблемой для тех, кто не сумел вовремя идентифицировать наличие в жилище паразитов  и допустил их размножение и обширное распространение по квартире. В таких случаях, необходимо знать, как избавиться от клопов эффективнее всего. 
+						.js-serviceTarakan.js-serviceItem
+							strong УНИЧТОЖЕНИЕ тараканов
+							p Уничтожение клопов может стать огромной проблемой для тех, кто не сумел вовремя идентифицировать наличие в жилище паразитов  и допустил их размножение и обширное распространение по квартире. В таких случаях, необходимо знать, как избавиться от клопов эффективнее всего. 
+			.services__bottom.clearfix
+				h3 А также мы боримся
+				ul
+					li
+						.services__bottom-image: img(src="img/service-bottom1.png", alt="")
+						span Плесень
+					li
+						.services__bottom-image: img(src="img/service-bottom2.png", alt="")
+						span Клещи
+					li
+						.services__bottom-image: img(src="img/service-bottom3.png", alt="")
+						span Блохи
+					li
+						.services__bottom-image: img(src="img/service-bottom4.png", alt="")
+						span Комары
+					li
+						.services__bottom-image: img(src="img/service-bottom5.png", alt="")
+						span Муравьи
+					li
+						.services__bottom-image: img(src="img/service-bottom6.png", alt="")
+						span Короеды
+	// -------------- services end ------------------
+	// -------------- features  ------------------
+	.page__features.color-white#features
+		.container
+			h2.color-white Что <span class="color-orange">выделяет</span> нас
+				span.small Среди конкурентов
+			.features.clearfix
+				.column-33p.features__item-wrap:.features__item
+						.features__ico
+							i.icon.icon-features-1
+						p.features__name Гарантия
+						p.features__desc 100% гарантированный результат, применяем современные медицинские препараты и передовое оборудование для достижения максимального эффекта
+				.column-33p.features__item-wrap: .features__item
+						.features__ico
+							i.icon.icon-features-2
+						p.features__name режим работы
+						p.features__desc Наши сотрудники работают круглосуточно, что дает Вам, возможность получить бесплатную консультацию и заказать санитарную обработку в любое удобное для вас время
+				.column-33p.features__item-wrap: .features__item
+						.features__ico
+							i.icon.icon-features-3
+						p.features__name конфиденциально
+						p.features__desc Соблюдаем полную конфиденциальность. В целях конфиденциальности - мастер приезжает на обычной машине и в обычной одежде
+				.column-33p.features__item-wrap: .features__item
+						.features__ico
+							i.icon.icon-features-4
+						p.features__name сертификаты
+						p.features__desc Мы работаем с препаратами прошедшими сертификацию и обладающими всеми необходимыми свойствами для обслуживания помещений любого характера
+				.column-33p.features__item-wrap: .features__item
+						.features__ico
+							i.icon.icon-features-5
+						p.features__name 5 лет на рынке
+						p.features__desc Мы на рынке уже более 5-ти лет, имея огромный опыт и множество довольных клиентов, мы можем дать Вам гарантию качества и безопасности на наши услуги
+				.column-33p.features__item-wrap: .features__item
+						.features__ico
+							i.icon.icon-features-6
+						p.features__name безопасность
+						p.features__desc Мы используем только безопасные для человека, домашних растений и животных методы
+	// -------------- features end ------------------
+	// -------------- price ------------------
+	.page__price.price.color-white#price
+		.container
+			.column-50p: .price__left
+				h2.color-white <span class="color-orange">Сколько</span> стоят наши услуги ?
+				p Заполните фору справа и наш специалист рассчитает для вас точную стоимость наших услуг
+			.column-50p: .price__right
+				.price__form
+					form(action="#")
+						select(name="").input
+							option Борьба с клопами
+							option Борьба с Мышами
+							option Борьба с тараканами
+						select(name="").input
+							option Однокомнатная квартира
+							option Однокомнатная квартира
+							option Однокомнатная квартира
+						input(type="text" placeholder="Ваш телефон").input
+						input(type="text" placeholder="Ваше имя").input
+						input(type="submit" value="Уточнить стоимость").input
+	// -------------- price end ------------------
+	// -------------- how work ------------------
+	.page__howwork#howwork
+		.container
+			h2 Как мы <span class="color-orange">работаем</span>
+			.howwork
+				.column-33p.howwork__item-wrap: .howwork__item.arrow-right
+					.howwork__ico
+						i.icon.icon-hww-1
+					.howwork__text Вы оставляете заявку на сайте
+				.column-33p.howwork__item-wrap: .howwork__item.arrow-right
+					.howwork__ico
+						i.icon.icon-hww-2
+					.howwork__text С вами свяжется персональный менеджер
+				.column-33p.howwork__item-wrap: .howwork__item.arrow-bottom
+					.howwork__ico
+						i.icon.icon-hww-3
+					.howwork__text Называете удобное для вас время
+				.column-33p.howwork__item-wrap: .howwork__item
+					.howwork__ico
+						i.icon.icon-hww-4
+					.howwork__text Мы обрабатываем помещение
+				.column-33p.howwork__item-wrap: .howwork__item.arrow-left
+					.howwork__ico
+						i.icon.icon-hww-5
+					.howwork__text Заключение договора
+				.column-33p.howwork__item-wrap: .howwork__item.arrow-left
+					.howwork__ico
+						i.icon.icon-hww-6
+					.howwork__text Приезд специалиста  в назначенное время
+	// -------------- how work end ------------------
+	// -------------- questions ------------------
+	.page__questions#questions
+		
+			.container
+				h2 Частые <span class="orange">вопросы</span> клиентов
+				.questions.clearfix#questions
+					.column-50p.questions__wrap
+						.questions__item
+							.questions__head Остаются ли следы на предметах?
+							.questions__answer Живем в частном доме и у нас завелись мыши, - мы уже как-то травили их сами и получили очень негативный опыт. Поэтому в этот раз решили воспользоваться услугами профессионалов. И не пожалели, - в отличие  от прошлого раза они ушли, а не перемерли за стенками, распространяя неприятные
+						.questions__item
+							.questions__head Остаются ли следы на предметах?
+							.questions__answer Живем в частном доме и у нас завелись мыши, - мы уже как-то травили их сами и получили очень негативный опыт. Поэтому в этот раз решили воспользоваться услугами профессионалов. И не пожалели, - в отличие  от прошлого раза они ушли, а не перемерли за стенками, распространяя неприятные
+						.questions__item
+							.questions__head Остаются ли следы на предметах?
+							.questions__answer Живем в частном доме и у нас завелись мыши, - мы уже как-то травили их сами и получили очень негативный опыт. Поэтому в этот раз решили воспользоваться услугами профессионалов. И не пожалели, - в отличие  от прошлого раза они ушли, а не перемерли за стенками, распространяя неприятные
+					.column-50p.questions__wrap
+						.questions__item
+							.questions__head Остаются ли следы на предметах?
+							.questions__answer Живем в частном доме и у нас завелись мыши, - мы уже как-то травили их сами и получили очень негативный опыт. Поэтому в этот раз решили воспользоваться услугами профессионалов. И не пожалели, - в отличие  от прошлого раза они ушли, а не перемерли за стенками, распространяя неприятные
+						.questions__item
+							.questions__head Остаются ли следы на предметах?
+							.questions__answer Живем в частном доме и у нас завелись мыши, - мы уже как-то травили их сами и получили очень негативный опыт. Поэтому в этот раз решили воспользоваться услугами профессионалов. И не пожалели, - в отличие  от прошлого раза они ушли, а не перемерли за стенками, распространяя неприятные
+						.questions__item
+							.questions__head Остаются ли следы на предметах?
+							.questions__answer Живем в частном доме и у нас завелись мыши, - мы уже как-то травили их сами и получили очень негативный опыт. Поэтому в этот раз решили воспользоваться услугами профессионалов. И не пожалели, - в отличие  от прошлого раза они ушли, а не перемерли за стенками, распространяя неприятные
+	// -------------- questions end ------------------
+	// -------------- callback questions ------------------
+	.page__cb-question.color-white#cb-questions
+		.container
+			.column-50p
+				h2.color-white Еще остались вопросы ?
+			.column-50p
+				.cb-question__form
+					p Оставьте заявку для получения бесплатной консультации нашего специалиста
+					form(action="#")
+						input(type="text" placeholder="Ваш телефон").input.cb-question__input
+						input(type="submit").input.cb-question__input.button
+	// -------------- callback questions end ------------------
+	// -------------- sertif ------------------
+	.page__sertif#sertif
+		.container
+			h2 лицензии и сертификаты
+			.sertif__wrap
+				.sertif#sertifCarousel
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+					.sertif__item: a(href="#"): img(src="img/sertif1.jpg", alt="")
+
+	// -------------- sertif end ------------------
+	// -------------- map ------------------
+	.page__map#contacts
+		.container
+			.map__balloon.ballon
+				.ballon__close
+				.ballon__left
+					h2 Контакты
+					p.addr Москва, ул. Шато Руставели, д7к3
+					p Режим работы офиса продаж: 
+					p понедельник — четверг 
+					p с 9.00 до 18.00, обед с 13.00 до 14.00 
+					p пятница — с 9.00 до 17.10
+				.ballon__right
+					img(src="img/ballon-img.jpg", alt="")
+					p Тел./Факс: 8 (800) 505-58-85
+					p E-mail: nevezhina94@mail.ru
+		.map__card  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat quo consectetur eos vitae adipisci odio unde in qui vero optio est itaque expedita, voluptate quae. Libero eius laudantium doloremque qui.
+		.map#map
+			
+			
+	// -------------- map end ------------------
+
+	

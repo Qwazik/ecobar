@@ -1,0 +1,28 @@
+footer.page__footer
+	.container
+		.main-header__top
+				a(href="index.html").logo.main-header__item
+					img(src="img/logo.png", alt="")
+				.main-menu.main-header__item
+					ul.main-menu__list
+						li.main-menu__item: a.main-menu__link(class="scrollto" href="#services") Услуги
+						li.main-menu__item: a.main-menu__link(class="scrollto" href="#features") Наши приемущества
+						li.main-menu__item: a.main-menu__link(class="scrollto" href="#price") Стоимость
+						li.main-menu__item: a.main-menu__link(class="scrollto" href="#howwork") Как мы работаем
+						li.main-menu__item: a.main-menu__link(class="scrollto" href="#questions") Частые вопросы
+						li.main-menu__item: a.main-menu__link(class="scrollto" href="#contacts") Контакты
+				.main-header__item
+					a(href="tel:+795296589636").main-header__phone <span class="color-orange">+7 (952)</span> 9658-96-36
+// -------- popup -------------
+.popup__overlay
+.popup__callback
+	.popup__close
+	form(action="")
+		.popup__left
+			p.popup__header Оставить <span class="color-orange">заявку</span>
+			p Заполните фору справа и наш специалист свяжется с вами в ближайшее время!
+		.popup__right
+			input(type="text" placeholder="Ваше имя").popup__input.input
+			input(type="text" placeholder="Ваш телефон").popup__input.input
+			button(type="submit").callback-button.popup__input--submit.input Отправить
+// -------- popup end -------------
