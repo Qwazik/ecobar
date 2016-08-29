@@ -109,17 +109,20 @@
         }
     }
     fixedMenu.init();
-  })
+
+
+    $('.fancybox-img').fancybox();
+  })//ready
 
 $(window).load(function(){
       $('#sertifCarousel').owlCarousel({
         items: 5,
         slideBy: 5,
-        margin: 105
+        margin: 95
       })
     $('.page__sertif .owl-dots').css('margin-left', '-' + ($('.page__sertif .owl-dots').width()/2) + 'px');
     $('.ymaps-image-with-content').append($('.map__balloon.ballon'));
-})
+})//load
 
 ymaps.ready(init);
 

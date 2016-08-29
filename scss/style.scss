@@ -16,7 +16,7 @@ body{
     font-family: Circe;
     font-size: 18px;
     font-weight: 400;
-    min-height: 1200px;
+    min-width: 1220px;
 }
 
 strong{
@@ -29,12 +29,6 @@ strong{
 .orange-border{
     padding-bottom: 0px;
     border-bottom: 3px solid #e67c07;
-}
-
-.page{
-    box-shadow: 0 0 10px lighten(black, 40%);
-    max-width: 1920px;
-    margin: auto;
 }
 
 .container{
@@ -243,8 +237,16 @@ span.big-span{
         margin-top: 55px;
     }
     &__phone{
+        display: block;
         @extend .main-menu__link;
         font-size: 21px;
+        &:hover{
+            border: none;
+            color: #111;
+        }
+        &.mail{
+            font-size: 14px;
+        }
     }
     &__body{
         margin-top: 102px;
@@ -426,7 +428,7 @@ border: 2px solid #363636;
 }
 
 .features{
-    margin: 0 -35px;
+    
     font-size: 0;
     &__ico{
         margin-bottom: 35px;
@@ -581,7 +583,11 @@ line-height: 24px;
 }
 
 .questions{
-    margin: 0 -16px;
+    // margin: 0 -16px;
+    &__row{
+        width: 100%;
+        margin: 0 -16px;
+    }
     &__wrap{
 
         padding: 0 16px;
@@ -712,10 +718,16 @@ line-height: 24px;
     background-image: url('../img/sertif-bg.png');
     background-position: left bottom;
     background-repeat: no-repeat;
+    padding-right: 2px;
     a{
         position: relative;
         z-index: 1;
         display: block;
+    }
+    img{
+        border: 1px solid gray;
+        width: 130px;
+        height: 200px;
     }
 }
 
