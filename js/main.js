@@ -20,7 +20,7 @@
             e.preventDefault();
             $(this).addClass('active');
             $(this).siblings().removeClass('active');
-            serviceChange(this);
+            
         })
     }
   }(jQuery));
@@ -39,7 +39,13 @@
             return false;
         });
 
-    $('.services__navigation-item').qToggle();
+    $('.services__navigation-item').on('mouseover', function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        serviceChange(this);
+    });
+
+
     function serviceChange (e){
       var serviceName = $(e).attr('id');
       $(e).closest('.services__menu').find('.js-'+serviceName+'').addClass('active').siblings().removeClass('active');
