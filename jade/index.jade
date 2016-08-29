@@ -1,7 +1,7 @@
 extends template
 
 block main
-	// -------------- services ------------------
+	// =================== services ===================
 	.page__services#services
 		.container
 			h2 Наши <span class="color-orange">услуги</span>
@@ -53,14 +53,14 @@ block main
 					li
 						.services__bottom-image: img(src="img/service-bottom6.png", alt="")
 						span Короеды
-	// -------------- services end ------------------
-	// -------------- features  ------------------
+	// =================== services end ===================
+	// =================== features  ===================
 	.page__features.color-white#features
 		.container
 			h2.color-white Что <span class="color-orange">выделяет</span> нас
 				span.small Среди конкурентов
 			.features.clearfix
-				.column-33p.features__item-wrap:.features__item
+				.column-33p.features__item-wrap: .features__item
 						.features__ico
 							i.icon.icon-features-1
 						p.features__name Гарантия
@@ -90,8 +90,8 @@ block main
 							i.icon.icon-features-6
 						p.features__name безопасность
 						p.features__desc Мы используем только безопасные для человека, домашних растений и животных методы
-	// -------------- features end ------------------
-	// -------------- price ------------------
+	// =================== features end ===================
+	// =================== price ===================
 	.page__price.price.color-white#price
 		.container
 			.column-50p: .price__left
@@ -115,8 +115,8 @@ block main
 						input(type="text" placeholder="Ваш телефон").input
 						input(type="text" placeholder="Ваше имя").input
 						input(type="submit" value="Уточнить стоимость").input
-	// -------------- price end ------------------
-	// -------------- how work ------------------
+	// =================== price end ===================
+	// =================== how work ===================
 	.page__howwork#howwork
 		.container
 			h2 Как мы <span class="color-orange">работаем</span>
@@ -145,9 +145,9 @@ block main
 					.howwork__ico
 						i.icon.icon-hww-6
 					.howwork__text Приезд специалиста  в назначенное время
-	// -------------- how work end ------------------
-	// -------------- questions ------------------
-	.page__questions#questions
+	// =================== how work end ===================
+	// =================== questions ===================
+	.page__questions#questions-anchor
 		
 			.container
 				h2 Частые <span class="orange">вопросы</span> клиентов
@@ -161,8 +161,8 @@ block main
 							.questions__item
 								.questions__head Как действует препарат?
 								.questions__answer Препарат после высыхания кристалезуется и  образует микропленку. Для животных и людей она не опасна, насекомые же заносят на лапках ее в организм.
-	// -------------- questions end ------------------
-	// -------------- callback questions ------------------
+	// =================== questions end ===================
+	// =================== callback questions ===================
 	.page__cb-question.color-white#cb-questions
 		.container
 			.column-50p
@@ -173,8 +173,8 @@ block main
 					form(action="#")
 						input(type="text" placeholder="Ваш телефон").input.cb-question__input
 						input(type="submit").input.cb-question__input.button
-	// -------------- callback questions end ------------------
-	// -------------- sertif ------------------
+	// =================== callback questions end ===================
+	// =================== sertif ===================
 	.page__sertif#sertif
 		.container
 			h2 лицензии и сертификаты
@@ -189,8 +189,8 @@ block main
 					.sertif__item: a(href="img/sertif7.jpg" data-fancybox-group="gal1").fancybox-img: img(src="img/sertif7.jpg", alt="")
 					.sertif__item: a(href="img/sertif8.jpg" data-fancybox-group="gal1").fancybox-img: img(src="img/sertif8.jpg", alt="")
 
-	// -------------- sertif end ------------------
-	// -------------- map ------------------
+	// =================== sertif end ===================
+	// =================== map ===================
 	.page__map#contacts
 		.container
 			.map__balloon.ballon
@@ -210,6 +210,6 @@ block main
 		.map#map
 			
 			
-	// -------------- map end ------------------
+	// =================== map end ===================
 
 	
